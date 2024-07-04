@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 
 export default class ImageGalleryItem extends Component {
-  handleClick = () => {
-    console.log("ImageGalleryItem clicked"); // Debug log
+  handleClick = () => {  
     this.props.onClick(this.props.image.largeImageURL);
   };
 

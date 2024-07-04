@@ -5,7 +5,6 @@ import ImageGalleryItem from "../ImageGalleryItem/ImageGalleryItem";
 export default class ImageGallery extends Component {
   render() {
     const { images, onImageClick } = this.props;
-    console.log("onImageClick prop in ImageGallery:", onImageClick); // Debug log
     return (
       <ul className="ImageGallery">
         {images.map((image) => (
