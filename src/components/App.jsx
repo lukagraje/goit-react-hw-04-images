@@ -28,7 +28,7 @@ export default function App() {
         );
         const data = response.data.hits;
         setImages((prevImages) =>
-          page === 1 ? data : [...prevState, ...data],
+          page === 1 ? data : [...prevImages, ...data],
         );
       } catch (error) {
         setError(error);
